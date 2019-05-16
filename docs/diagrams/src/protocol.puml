@@ -1,0 +1,37 @@
+@startuml protocol
+autonumber "<b>(##)"
+hide footbox
+
+actor Operator
+
+Operator -> ServiceA : Export JSON
+Operator -> ServiceB ++ : Process JSON
+
+group 1st JSON File
+  ServiceB -> API : Message 
+    note left: ID: **1** Type: **SEQUENCE** 
+  ServiceB -> API ++ : Sequence
+
+  API -> Processor ** : Transmit 
+
+  return Message
+    note right: ID: **1** Type: **ACK**
+end
+
+|||
+
+group 2nd JSON File
+  ServiceB -> API : Message 
+    note left: ID: **2** Type: **SEQUENCE** 
+  ServiceB -> API ++ : Sequence
+
+  API -> Processor ** : Transmit 
+
+  return Message
+    note right: ID: **2** Type: **ACK**
+end
+
+... 3rd, 4th, etc. files ...
+
+return : Process completed
+@enduml
