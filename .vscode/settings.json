@@ -1,0 +1,15 @@
+{
+  "plantuml.diagramsRoot": "docs/diagrams/src",
+  "plantuml.exportOutDir": "docs/diagrams/out",
+  "plantuml.exportFormat": "svg",
+  "plantuml.previewAutoUpdate": true,
+  "plantuml.includes": ["styles/blue", "includes"],
+  "markdown-pdf.breaks": true,
+  "markdown-pdf.convertOnSave": false,
+  "markdownlint.config": {
+    "default": true,
+    "MD033": {
+      "allowed_elements": [ "div" ]
+    }
+  }
+}
