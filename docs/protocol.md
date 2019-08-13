@@ -1,8 +1,11 @@
-# Example Protocol
+# Example Protocol <!-- omit in toc -->
 
-## Contents
+<div class="page"/>
+
+## Contents <!-- omit in toc -->
 
 - [Functional](#functional)
+  - [Sequence Diagram](#sequence-diagram)
 
 <div class="page"/>
 
